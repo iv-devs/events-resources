@@ -1,0 +1,51 @@
+<div class="row">
+    <div class="col-md-8">
+        <h1>Listado de Pedidos</h1>
+   </div>
+   <div class="col-md-4">
+            <a href="/pedido/agregar" class="btn btn-primary">
+                Agregar Nuevo Pedido</a>
+   </div>
+</div>   
+
+<table id="tbl_productos" class="table table-hover table-bordered table-striped 
+table-responsive table-condensed">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>ver</th>
+            <th>fecha</th>
+            <th>estado</th>
+            <th>cliente</th>
+            <th>Eliminar Pedido</th>
+          
+        </tr>
+    </thead>
+
+    <!--fila-->
+    <tr>
+        <td>{pedido_id}</td>
+        <td><a href="/pedido/ver/{pedido_id}">Ver Pedido</a></td>
+        <td>{fecha}</td>
+        <td>{estado}</td>
+        <td>{cliente}</td>
+        <td><a href="/pedido/eliminar/{pedido_id}">Eliminar Pedido</a></td>
+     
+    </tr>
+    <!--fila-->
+</table>
+
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+        $('#tbl_productos').dataTable({
+            language: {
+                url: '/static/json/dataTable.languaje.json'
+            },
+            "search": {
+                "search": ""
+            },
+            "order": [0, "desc"],
+            "pageLength": 100
+        });
+    } );
+</script>

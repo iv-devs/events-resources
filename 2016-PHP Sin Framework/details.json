@@ -1,0 +1,16 @@
+{
+  "cover": "https://s3.amazonaws.com/ivdevs/events-banners/meetup_php.jpg",
+  "date": "09-04-2016",
+  "description": "PHP - MVC, OOP, Composite y Persistencia<br>Desmitificando la Programación Sin Framework en el BackEnd!<br>Comunidad! tenemos nuevo meetup, esta vez enfocado 100% en PHP Orientado a objetos y como aplicar el patrón MVC y sin framework para el backend de nuestras aplicaciones.",
+  "kind": "Workshop",
+  "name": "PHP - Desmitificando la Programación Sin Framework en el Backend",
+  "place": "La Brújula Cowork",
+  "speakers": [
+    {
+      "name": "Cristofer Robles",
+      "presentation": "http://slides.com/cesarencinaleon/git-basico#/",
+      "twitter": ""
+    }
+  ],
+  "url": "http://www.meetup.com/es-ES/IV-DEVS/events/229973518/"
+}

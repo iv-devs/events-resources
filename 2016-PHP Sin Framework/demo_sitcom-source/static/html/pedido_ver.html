@@ -1,0 +1,60 @@
+<script language="javascript" src="/static/js/pedidos.js"></script>
+<h1>Pedido Nº <b>{pedido_id}</b>
+<small><a href="/pedido/eliminar/{pedido_id}"><i class="fa fa-trash"></i></a></small>
+</h1>
+<h3>Cliente : {cliente}</h3>
+<hr>
+<h3>Productos</h3>
+<form method=post action=/pedido/actualizar class="form-horizontal">
+    <input type="hidden" name="pedido_id" value="{pedido_id}">
+    
+    <div id="contenedorDeProductosActuales">
+      <!--productos-->
+      <div class="form-group" name="filaProductoActual">
+        <div class="col-lg-1">
+          <input class="form-control" name="cantidades[]" placeholder="1" type="text" 
+            value="1">
+        </div>
+        <input type="hidden" name="productos[]" value="{producto_id}">
+        <div class="col-lg-9">{denominacion}</div>
+        <div class="col-lg-2">
+          <button type="button" class="btn btn-danger" name="btnSuprimirActual"
+            onclick="suprimir_fila_producto_actual(this);"><i 
+            class="fa fa-trash"></i></button>
+        </div>
+      </div>
+      <!--productos-->
+    </div>
+
+  <div id="contenedorDeProductos">
+    <div class="form-group" name="filaProducto">
+      <div class="col-lg-1">
+        <input class="form-control" name="cantidades[]" placeholder="1" type="text" 
+          value="1">
+      </div>
+      <div class="col-lg-9">
+        <select class="form-control" name="productos[]">
+            <option value=0>&nbsp;</option>
+            <!--listado-productos-->
+            <option value={producto_id}>{denominacion}</option>
+            <!--listado-productos-->
+        </select>
+      </div>
+      <div class="col-lg-2">
+        <button type="button" class="btn btn-success"
+          onclick="agregar_fila();"><i class="fa fa-plus"></i></button>
+        <button type="button" class="btn btn-danger" name="btnSuprimir"
+          onclick="suprimir_fila_producto_nuevo(this);"><i 
+          class="fa fa-trash"></i></button>
+      </div>
+    </div>
+    <!-- acá se copian las filas de productos-->
+  </div>
+
+<p>&nbsp;<br>
+    <button type="submit" class="btn btn-success">Guardar cambios</button>
+</p>
+</form>
+
+
+<p>&nbsp;<br></p>

@@ -1,0 +1,293 @@
+@font-face {
+  font-family: 'FiraSans400';
+  src: 
+    local('Fira Sans'),
+    local('FiraSans-Regular'), 
+    url('../fonts/FiraSans400.woff') format('woff');
+}
+@font-face {
+  font-family: 'FiraSans300';
+  src: 
+    local('Fira Sans Light'),
+    local('FiraSans-Light'), 
+    url('../fonts/FiraSans300.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Belleza';
+  src: 
+    local('Belleza'),
+    local('Belleza-Regular'), 
+    url('../fonts/Belleza400.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: 
+    local('Lato Regular'),
+    local('Lato-Regular'), 
+    url('../fonts/Lato400.woff') format('woff');
+}
+@font-face {
+  font-family: 'OpenSans300';
+  src: url('../fonts/OpenSans300.woff') format('woff');
+}
+@font-face {
+  font-family: 'OpenSansCondensed';
+  src: url('../fonts/OpenSansCondensed.woff') format('woff');
+}
+@font-face {
+  font-family: 'SSP';
+  src: url('../fonts/SourceSansPro400.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'UbuntuMono';
+  src: url('../fonts/UbuntuMono.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Frijole';
+  src: url('../fonts/Frijole.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Creepster';
+  src: url('../fonts/Creepster.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lobster';
+  src: url('../fonts/Lobster.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'StardosStencil';
+  src: url('../fonts/StardosStencil.woff2') format('woff2');
+}
+
+/*
+pre {
+    border-top: 1px dashed blue;
+    border-bottom: 1px dashed blue;
+    background-color: #CFF;
+    font-family: 'UbuntuMono';
+    color: blue;
+    font-size: 16px;
+    line-height: 1;
+    padding: 20px;
+}
+
+code{
+  font-size: 20px;
+}
+*/
+.Lato     {  font-family: 'Lato'; font-size: 50px}
+.Open     {  font-family: 'OpenSans300'; font-size: 18px}
+.SSP     {  font-family: 'SSP'; font-size: 18px}
+.UbuntuMono     {  font-family: 'UbuntuMono'; font-size: 18px}
+.Frijole {font-family: 'Frijole'}
+.Creepster {font-family: 'Creepster'}
+.Lobster {font-family: 'Lobster'}
+.StardosStencil {font-family: 'StardosStencil'}
+
+.t1{
+  font-size: 150px;
+  text-align: center;
+  font-family: 'FiraSans400';
+  height: 200px;
+  position: relative;
+  top: 15%; 
+
+}
+.slide{
+  font-family: 'FiraSans300';
+}
+.t2{
+  font-size: 45px;
+  text-align: center;
+  font-family: 'Lobster';  
+  height: 50px;
+  position: relative;
+  top: 25%;  
+  color: #A4A4A4; 
+}
+.t3{
+  font-family: 'FiraSans400';  
+  font-weight: bold;
+  font-size: 40px;
+}
+b{
+  font-weight: bold;
+}
+
+.desmitificar{
+  font-size: 70px;
+  color: #DF0101;
+  font-family: 'Creepster'
+}
+
+.sinframework{
+  color: #1C1C1C;
+
+}
+
+/* Font Size*/
+.t9{ font-size: 9px}
+.t12{ font-size: 12px}
+.t14{ font-size: 14px}
+.t16{ font-size: 16px}
+.t18{ font-size: 18px}
+.t20{ font-size: 20px}
+.t22{ font-size: 22px}
+.t24{ font-size: 24px}
+.t36{ font-size: 36px}
+.t40{ font-size: 40px}
+.t50{ font-size: 50px}
+.t60{ font-size: 60px}
+.t80{ font-size: 80px}
+.t100{ font-size: 100px}
+.t125{ font-size: 125px}
+.t150{ font-size: 150px}
+
+/** Rojos **/
+.Ro1 { background-color: #C00; color: #FFF;}/* 40% */
+.Ro2 { background-color: #e74c3c; color: #FFF;}/* FLAT % */
+.Ro3 { background-color: #fcc; color: #C00;} /* 90% */
+.Ro4 { background-color: #ffe5e5; color: #C00;} /* 95% */
+.Ro5 { background-color: #fff0f0; color: #C00;} /* 97% */
+.Ro6 { color: #C00;} 
+
+/** Violetas **/
+.Vi1 { background-color: #90C; color: #FFF;}
+.Vi2 { background-color: #9b59b6; color: #FFF;} /* FLAT */ 
+.Vi3 { background-color: #f2ccff; color: #90C;} /* 90% */
+.Vi4 { background-color: #f9e5ff; color: #90C;} /* 95% */
+.Vi5 { background-color: #fbf0ff; color: #90C;} /* 97% */
+.Vi6 { color: #90C;}
+
+
+
+/** Azul **/
+.Az1 { background-color: #0F75DA;color: #FFF;}
+.Az2 { background-color: #3498db;color: #FFF;}    /* FLAT */ 
+.Az3 { background-color: #CFE6FC;color: #0F75DA;} /* 90% */
+.Az4 { background-color: #E7F2FD;color: #0F75DA;} /* 95% */
+.Az5 { background-color: #F1F7FE;color: #0F75DA;} /* 97% */
+.Az6 { color: #0F75DA;}
+
+@media print {
+  .Az1 { background-color: #0F75DA;color: #FFF;}
+  .Az2 { background-color: #3498db;color: #FFF;}    /* FLAT */ 
+  .Az3 { background-color: #CFE6FC;color: #0F75DA;} /* 90% */
+  .Az4 { background-color: #E7F2FD;color: #0F75DA;} /* 95% */
+  .Az5 { background-color: #F1F7FE;color: #0F75DA;} /* 97% */
+  .Az6 { color: #0F75DA;}
+
+}
+
+/** Verdes **/
+.Ve1 { background-color: #4A9B17; color: #FFF;   }
+.Ve2 { background-color: #2ecc71; color: #FFF;   } /* FLAT */ 
+.Ve3 { background-color: #e1f8d3; color: #4A9B17; } /* 90% */
+.Ve4 { background-color: #F0FCE9; color: #4A9B17; } /* 95% */
+.Ve5 { background-color: #F6FDF2; color: #4A9B17; } /* 97% */
+.Ve6 { color: #4A9B17; } 
+
+
+/** Amarillos **/
+.Am1 { background-color: #f1c40f;color: #FFF;}
+.Am2 { background-color: #f39c12;color: #FFF;}    /* FLAT */
+.Am3 { background-color: #fcf3cf;color: #f1c40f;} /* 90 */
+.Am4 { background-color: #FEF9E7;color: #f1c40f;} /* 95 */
+.Am5 { background-color: #FEFBF1;color: #f1c40f;} /* 97 */
+.Am6 { color: #f1c40f;}
+
+/* 
+orange #f39c12
+carrot #e67e22
+/** Naranjas **/
+.Na1 { background-color: #f6931f;color: #FFF;}
+.Na2 { background-color: #e67e22;color: #FFF;}    /* FLAT */
+.Na3 { background-color: #FFE0CC;color: #f6931f;} /* 90 */
+.Na4 { background-color: #FFF0E5;color: #f6931f;} /* 95 */
+.Na5 { background-color: #FFF6F0;color: #f6931f;} /* 97 */
+.Na6 { color: #f6931f;} 
+
+
+
+.center{  text-align: center;}
+.left{  text-align: left;}
+.right{  text-align: right;}
+
+.b{font-weight: bold;}
+.i{font-style: italic;}
+
+.def{
+  border: 1px dashed #f6931f;
+  background-color: #FFF6F0;
+  padding: 20px;
+  margin: 20px;
+  line-height: 1.3;
+  
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+
+  text-align: left;
+}
+.def .palabra{
+  color: #f6931f;
+  text-align: left;
+  font-family: 'FiraSans400';
+  font-size: 50px;
+}
+
+ol, ul {
+  margin-left: 50px;
+}
+.t{
+  width: 300px;
+
+  float: left;
+
+}
+.terminal{
+  background-color: #000000;
+  padding: 30px;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.dir{
+  color: #01DF3A;
+  font-weight: bold;
+}
+.php{
+  color: magenta;
+}
+
+.libro{
+  width: 220px;
+  height: 250px;
+  float: left;
+  margin: 10px;
+  background-color: lime;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#extrapolando{
+  width: 100%;
+}
+
+ #extrapolando td{
+  height: 140px;
+  vertical-align: middle
+ }
+
+  #extrapolando th{
+   font-family: "FiraSans400";
+ }

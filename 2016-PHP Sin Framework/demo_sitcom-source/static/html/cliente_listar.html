@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col-md-8">
+        <h1>Listado de Clientes</h1>
+   </div>
+   <div class="col-md-4">
+            <a href="/cliente/agregar" class="btn btn-primary">
+                Agregar Nuevo Cliente</a>
+   </div>
+</div>   
+
+<table id="tbl_productos" class="table table-hover table-bordered table-striped table-responsive">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>ver</th>
+            <th>Nombre Cliente</th>
+            <th>run</th> 
+            <th>contrato</th>  
+            <th>Eliminar Cliente</th>
+        </tr>
+    </thead>
+
+    <!--fila-->
+    <tr>
+        <td>{cliente_id}</td>
+        <td><a href="/cliente/ver/{cliente_id}">ver</a></td>
+        <td>{nombre}</td>
+        <td>{run}</td>
+        <td>{contrato}</td>   
+        <td><a href="/cliente/eliminar/{cliente_id}">Eliminar Cliente</a></td>
+    </tr>
+    <!--fila-->
+</table>
+
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+        $('#tbl_productos').dataTable({
+            language: {
+                url: '/static/json/dataTable.languaje.json'
+            },
+            "search": {
+                "search": ""
+            },
+            "order": [0, "desc"],
+            "pageLength": 10
+        });
+    } );
+</script>

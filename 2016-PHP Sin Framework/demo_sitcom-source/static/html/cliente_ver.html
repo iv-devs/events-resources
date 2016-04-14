@@ -1,0 +1,90 @@
+<div class="row">
+    <div class="col-md-8">
+        <h1>{denominacion}
+            <a href="/cliente/editar/{cliente_id}">
+                <i class="fa fa-edit"></i>
+            </a>
+        </h1>
+   </div>
+   
+</div>  
+<hr>
+<div class="row">
+    <div class="col-md-7">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <b>Domicilio</b>
+                <a href="/domicilio/editar/{domicilio_id}"><i 
+                    class="fa fa-edit"></i></a>
+            </div>
+            <div class="panel-body">
+                <p><big>{calle} N° {altura}</big></p>
+                <p><b>Localidad:</b> {localidad}</p>
+                <p><b>Provincia:</b> {provincia}</p>
+            </div>
+        </div>
+        
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <b>Historial de Pedidos</b>
+            </div>
+            <div class="panel-body">
+                <table class="table">
+                    <tr>
+                        <th>ID</th>
+                        <th>Fecha</th>
+                        <th>Ver / Editar</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                    <!--pedidos-->
+                    <tr>
+                        <td>{pedido_id}</td>
+                        <td>{fecha}</td>
+                        <td><a href="/pedido/ver/{pedido_id}">Ver Pedido</a></td>
+                        <td><a href="/pedido/eliminar/{pedido_id}"><i class="fa fa-trash"></i></a></td>
+                    </tr>
+                    <!--pedidos-->
+                </table>
+                <a href="/pedido/agregar/{cliente_id}" class="btn btn-success"><i class="fa fa-plus"></i> Agregar</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4 col-md-offset-1">
+        <div class="panel panel-success">
+            <div class="panel-heading text-center">
+                <b>RUT</b>
+            </div>
+            <div class="panel-body text-center">
+                <h2>{identificacion_tributaria}</h2>
+            </div>
+        </div>
+        
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <b>E-mail</b>
+            </div>
+            <div class="panel-body">
+                {E-mail}
+            </div>
+        </div>
+        
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <b>Teléfono</b>
+            </div>
+            <div class="panel-body">
+                {Teléfono}
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="col-md-12"><center>
+    <a href="/cliente/eliminar/{cliente_id}" class="btn btn-danger">Eliminar Cliente</a>
+    </center>
+</div>
+    
+
+<p>&nbsp;</p>

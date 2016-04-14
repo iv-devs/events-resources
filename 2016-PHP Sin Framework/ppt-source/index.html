@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>OOP & MVC</title>
+    <meta name="autor" content="Cristofer.io">
+    <link href="css/impress.css" rel="stylesheet" />    
+    <link href="css/base.css" rel="stylesheet" />
+    <link href="css/prism.css" rel="stylesheet" />
+
+
+</head>
+<body class="impress-not-supported">
+
+
+<div id="impress">
+
+    <div id="bored" class="step slide" data-x="0" data-y="0">
+        <div class="t1 Az1">OOP y MVC</div>
+        
+        <div class="t2"><a class="desmitificar">Desmitificando</a> la Programación <br><a class="sinframework">Sin FrameWork</a> en el BackEnd...!</div>
+        
+
+    </div>
+  
+
+    <div id="d2" class="step slide" data-x="0" data-y="-700">     
+        <div class="def">
+            <div class="palabra b">Paradigma</div>
+            <p>
+                <ul>
+                    <li>Modelo o forma</li>
+                    <li>Lógica de Objetos</li>            
+                </ul>
+            </p>
+        </div>
+<br>
+        <div class="def">
+            <div class="palabra b">Patron Arquitectónico</div>
+            <p>
+                <ul>
+                    <li>Elementos</li>
+                    <li>Relacion</li>
+                    <li>Responsabilidades</li>
+                    <li>Restricciones</li>
+                </ul>
+            </p>
+        </div>
+        
+
+    </div>
+
+    <div class="step slide" data-x="-900" data-y="-700" data-rotate-y="-45">
+
+    <img width="100%" height="auto" src="img/mvc.png" alt="">
+    </div>
+
+    <div class="step slide" data-x="900" data-y="-700" data-rotate-y="45">
+
+    <div class="Az6 t3 t40">Pensando en Objetos</div>
+    <ol>
+        <li>Encontrando el Objeto: Un Objeto es una <b class="Az1"> COSA </b> (Sustantivo)</li><br>
+        <li>Describiendo el Objeto: (Cualidades, Adjetivos)
+            <ul>
+                <li>El objeto <b class="Ve1"> ES </b> verde</li>
+                <li>El objeto <b class="Ve1"> ES </b> grande</li>
+                <li>El objeto <b class="Ve1"> ES </b> feo</li>
+                <li>El objeto <b class="Ro1"> TIENE </b> 1 puertas</li>
+                <li>El objeto <b class="Ro1"> TIENE </b> 5 ventanas</li>
+            </ul>
+        </li><br> 
+    </ol>
+    
+    </div>
+
+    <div class="step slide" data-x="900" data-y="-700" data-z="-700"
+    data-rotate-y="90">
+
+    <div class="Az6 t3">Pensando en Objetos</div>
+    Ejemplo
+     <ul>
+            <li>El objeto <b class="Ve1"> ES </b> verde, verde es un <b class="Vi1"> COLOR </b></li><br>
+            <li>El objeto <b class="Ve1"> ES </b> grande, grande es un <b class="Vi1"> TAMAÑO </b></li><br>
+            <li>El objeto <b class="Ve1"> ES </b> feo, feo es un <b class="Vi1"> ASPECTO </b></li><br>
+            <li>El objeto <b class="Ro1"> TIENE </b> 1 puerta, Puerta es un <b class="Az1"> OBJETO </b></li><br>
+            <li>El objeto <b class="Ro1"> TIENE </b> 5 ventanas, Ventana es un <b class="Az1"> OBJETO </b></li>
+        </ul>
+
+    
+    </div>
+
+    <div class="step slide" data-x="900" data-y="-700" data-z="-1400"
+    data-rotate-y="135">
+
+    <div class="Az6 t3">Pensando en Objetos</div>
+    <ol>
+        <li>El Objeto <b class="Ve1"> ES </b>... --> <b class="i Az5">PROPIEDAD Simple</b></li>
+        <li>El Objeto <b class="Ro1"> TIENE </b>... 
+            <ul>
+                <li>1 Objeto : <b class="i Az5">PROPIEDAD Compuesta</b></li>
+                <li>+1 Objeto : <b class="i Az5">PROPIEDAD Colectora</b></li>
+            </ul>
+        </li><br>
+        <li>El Objeto <b class="Na1"> PUEDE </b>... (verbo)
+            <ul>
+                <li>El objeto <b class="Na1"> PUEDE </b> volar --><b class="i Az5">Metodo()</b></li>
+                <li>El objeto <b class="Na1"> PUEDE </b> flotar --><b class="i Az5">Metodo()</b></li>
+                <li>El objeto <b class="Na1"> PUEDE </b> correr --><b class="i Az5">Metodo()</b></li>
+            </ul>
+        </li>
+    </ol>
+    
+    </div>
+
+    <div class="step slide" data-x="0" data-y="-700" data-z="-1400"
+    data-rotate-y="180">
+
+    <div class="Az6 t3">Extrapolando...</div>
+    <table id="extrapolando">
+        <tr class="Az1 center b t40">
+            <th>Realidad</th>
+            <th>Programacion</th>
+        </tr>
+        <tr class="Vi4 b">
+            <td>Objeto</td>
+            <td>Objeto</td>
+        </tr>
+        <tr>
+            <td class="Az4 b">Atributo, cualidades <br>o adjetivos</td>
+            <td class="i Az4 t24 b">
+                Propiedades Simples<br>
+                Propiedades Compuestas<br>
+                Propiedades Collectoras<br>
+            </td>
+        </tr>
+        <tr>
+            <td class="Ve4 b">Acciones , verbos</td>
+            <td class="i Ve4 b">Metodo()</td>
+        </tr>        
+    </table>
+    
+    </div>
+
+
+
+    <div class="step slide" data-x="-900" data-y="0" data-rotate-y="-45">
+
+    directorio
+    <pre class="terminal">
+<a class="dir">sitcom.local</a>
+    <a class="dir">logs</a>
+    <a class="dir">application</a>
+        <a class="dir">core</a>
+        <a class="dir">modules</a>
+        <a class="dir">static</a>
+            <a class="dir">css</a>
+            <a class="dir">fonts</a>
+            <a class="dir">html</a>
+            <a class="dir">img</a>
+            <a class="dir">js</a>            
+            <a class="dir">json</a>
+        <a class="">.htaccess</a>
+        <a class="">config.ini</a>
+        <a class="php">settings.php</a>
+    </pre>
+    </div>
+
+
+    
+
+
+
+    <div class="step slide" data-x="1000" data-y="0">
+
+.htaccess
+<pre class="language-bash line-numbers" style="height: 470px">
+<code>RewriteEngine On
+RewriteRule !(^static) front_controller.php
+</code></pre>
+    </div>
+
+    <div class="step slide" data-x="2000" data-y="0">
+
+config.ini <code class="t18">(variables de entorno)</code>
+<pre class="language-bash line-numbers" style="height: 470px">
+<code>[DATABASE]
+DB_NAME = sitcom
+DB_HOST = 192.165.325.211
+DB_USER = homer
+DB_PASS = #&%$_225
+
+[PATHS]
+APP_DIR = ${DOCUMENT_ROOT}
+STATIC_DIR = ${DOCUMENT_ROOT}/static
+TEMPLATE_DIR = ${DOCUMENT_ROOT}/templates/
+WRITABLE_DIR = ../uploads
+TEMPLATE_FILE = "templates/base_template.html"
+DIR_FOTOS_ALM = ../uploads/fotos_alumnos/
+
+[APPLICATION]
+PRODUCTION = false
+</code></pre>
+    </div>
+
+    <div class="step slide" data-x="3000" data-y="0">
+settings.php
+<pre class="language-php line-numbers" style="height: 470px"><code>
+$config = parse_ini_file('config.ini', true);
+foreach($config as $seccion=>$array) {
+    foreach($array as $constante=>$valor) {
+        define($constante, $valor);
+    }
+}
+if(!PRODUCTION) {
+    #Establece el nivel de notificación de errores
+    ini_set('error_reporting', E_ALL | E_NOTICE | E_STRICT); 
+    #Determina que los errores deberían ser impresos en pantalla
+    ini_set('display_errors','1');
+    ini_set('track_errors', 'On');
+} else {
+    ini_set('display_errors','0'); #Determina que los errores NO deberían ser impresos en pantalla
+}
+# Ruta de includes x defecto (php.ini)
+ini_set('include_path', APP_DIR);
+</code></pre>        
+    </div>
+
+    <div id="" class="step slide center" data-x="0" data-y="700">
+        <img width="auto" height="100%" src="img/EsquemaHTML.png" alt="" >
+    </div>
+
+    <div id="" class="step slide center" data-x="1000" data-y="700">
+        <img width="100%" height="auto" src="img/DiagramaClases.png" alt="" >
+    </div>
+    <div id="" class="step slide center" data-x="-1000" data-y="700">
+        <img width="auto" height="100%" src="img/abm.png" alt="" >
+    </div>
+
+    <div id="" class="step slide center" data-x="-2000" data-y="700">
+        <img width="100%" height="auto" src="img/fc.png" alt="" >
+    </div>
+    
+
+
+
+
+    <div id="overview" class="step" data-x="0" data-y="0" data-scale="5">
+    </div>
+
+</div>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+<script src="js/prism.js"></script>
+
+</body>
+</html>

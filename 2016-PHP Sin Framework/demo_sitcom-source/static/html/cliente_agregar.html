@@ -1,0 +1,43 @@
+<form class="form-horizontal col-lg-6" method=post action="/cliente/guardar">
+  <fieldset>
+    <legend>Agregar Nuevo Cliente</legend>
+      <div class="form-group">
+      <label for="nombre" class="col-lg-2 control-label">Nombre</label>
+      <div class="col-lg-10">
+        <input class="form-control" name="nombre" id="nombre" placeholder="Nombre" type="text">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="run" class="col-lg-2 control-label">RUN</label>
+      <div class="col-lg-10">
+        <input class="form-control" id="run" 
+               name="run" placeholder="00.000.000-0" 
+                type="text">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="inputPassword" class="col-lg-2 control-label">Contrato</label>
+      <div class="col-lg-10">
+        <select name=contrato class="form-control">
+            <option value=0 selected>&nbsp;</option>
+            <option value=1 selected>Estandar</option>
+            <option value=2 selected>Extendido</option>
+            <!--options-->
+            <option value="{provincia_id}">{denominacion}</option>
+            <!--options-->
+        </select>
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-4">
+        <button type="reset" class="btn btn-default">Cancelar</button>
+        <button type="submit" class="btn btn-primary">Agregar</button>
+      </div>
+    </div>  
+  </fieldset>
+</form>
+
+  
