@@ -1,0 +1,29 @@
+{
+  "name": "IV Devs",
+  "date": "25-10-2015",
+  "description": "Está diseñado para fomentar la Innovación y Emprendimiento mejorando el nivel técnico de los profesionales IT de la región,orientado a generar acceso a nuevas tecnologías, actualización de conocimientos, talleres de formación y emprendimiento, así como networking con pares. <br> < IV Devs > junta estudiantes y profesionales del área para la co-creación de soluciones, que pueden proyectar, un alto impacto social, tanto para la región, como también para el resto del globo.",
+  "place": "Inacap La Serena",
+  "url": "https://welcu.com/programadores-iv-region/iv-devs",
+  "speakers": [
+    {
+      "name": "Felipe Torres",
+      "twitter": "@fforres",
+      "presentation": "http://www.fforr.es/presentaciones-y-charlas/ProgramadoresIV/"
+    },
+    {
+      "name": "José Vildósola",
+      "twitter": "@josevildosola55",
+      "presentation": "https://docs.google.com/presentation/d/1U7MwuoGKe06xFSAgQ5CZQ2akyPK4nyo0A-Jey2vfda4/edit#slide=id.p"
+    },
+    {
+      "name": "Claudio Alvarado",
+      "twitter": "@z3robatu",
+      "presentation": ""
+    },
+    {
+      "name": "Felipe Cabargas",
+      "twitter": "@juanpintoduran",
+      "presentation": "https://speakerdeck.com/felipecabargas/la-palabra-de-git-iv-devs-revision"
+    }
+  ]
+}
