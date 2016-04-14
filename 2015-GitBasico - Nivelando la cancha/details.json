@@ -1,0 +1,16 @@
+{
+  "cover": "meetup-1.jpg",
+  "date": "12-12-2015",
+  "description": "Hola comunidad!! tenemos primer meetup, que será realizado por Cesar Encina Leon, nos tendrá 2 horas enseñándonos lo básico de git, como instalarlo, que es, para que funciona y como usarlo correctamente en todos nuestros proyectos. Este meetups será la patada inicial para los próximos, ya que usaremos git para todos los demás !! así que no falten a esta iniciativa!! saludos y nos vemos",
+  "kind": "Workshop",
+  "name": "Git Básico - Nivelando la cancha",
+  "place": "Inacap La Serena",
+  "speakers": [
+    {
+      "name": "César Encina León",
+      "presentation": "http://slides.com/cesarencinaleon/git-basico#/",
+      "twitter": "@dmaster69"
+    }
+  ],
+  "url": "http://www.meetup.com/es-ES/IV-DEVS/events/226730023/"
+}

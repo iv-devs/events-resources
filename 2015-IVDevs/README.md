@@ -1,5 +1,6 @@
-**IV Devs - 25/10/2015 - Inacap La Serena**
+**IV Devs**
 ===================
+## Evento - 25-120-2015 - Inacap La Serena
 > <i class="icon-upload"></i>[Link Evento](https://welcu.com/programadores-iv-region/iv-devs)
 
 ### <i class="icon-file"></i>Event Description:
