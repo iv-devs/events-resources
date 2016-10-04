@@ -1,0 +1,16 @@
+{
+  "cover": "https://s3.amazonaws.com/ivdevs/events-banners/django_concadenas_1.jpg",
+  "date": "24-10-2016",
+  "description": "Python: lo esencial para utilizar Django. Django: modelos, vistas, templates, urls, formularios, static & media files, ORM & querysets, panel de administración, y más (**).",
+  "kind": "Workshop",
+  "name": "DJango con cadenas",
+  "place": "La Brújula Cowork",
+  "speakers": [
+    {
+      "name": "Erick Castillo",
+      "presentation": "",
+      "twitter": ""
+    }
+  ],
+  "url": "http://www.meetup.com/es-ES/IV-DEVS/events/232642018/"
+}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+
+<form method="post">
+	{% csrf_token %}
+	<h3>¿Desea eliminar la serie {{ serie.nombre }}?</h3>
+	<button class="btn btn-danger" type="submit">Sí, eliminar</button>
+	<a href="{% url 'listar-series' %}" class="btn btn-default">Cancelar</a>
+</form>
+
+</div>
+{% endblock %}

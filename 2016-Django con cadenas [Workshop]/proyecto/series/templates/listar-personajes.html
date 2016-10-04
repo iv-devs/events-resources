@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block head_title %}{{titulo}}{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+	{% for personaje in personajes %}
+	<div class="well">
+        <div class="row">
+            <div class="col-md-2">
+            	{% if personaje.imagen %}
+            		<img src="{{ MEDIA_URL }}{{ personaje.imagen }}" height="150" width="200">
+            	{% else %}
+            		<img src="{% static 'apps/img/no-img.png' %}" height="150" width="200">
+            	{% endif %}
+            </div>
+			<div class="col-md-5">
+				<ul>
+					<li>N°: {{ forloop.counter }}</li>
+					<li>ID: {{ personaje.id }}</li>
+					<li>Nombre: {{ personaje.nombre }}</li>
+					<li>Sexo: {{ personaje.sexo }}</li>
+					<li>Serie: {{ personaje.serie.nombre }}</li>
+					<li>
+						<a href="{% url 'editar-personaje' personaje.id %}" class="btn btn-warning">Editar</a>
+						<a href="{% url 'eliminar-personaje' personaje.id %}" class="btn btn-danger">Eliminar</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	{% empty %}
+	<h2>No hay personajes.</h2>
+	{% endfor %}
+
+</div><!-- /.container -->
+
+{% endblock %}
