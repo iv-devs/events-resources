@@ -1,0 +1,26 @@
+{
+  "cover": "https://s3.amazonaws.com/ivdevs/events-banners/django_concadenas_1.jpg",
+  "date": "22-11-2016",
+  "description": "Tres temas se tocaron: 'el papeleo y la burocracia', 'Desarrolladores de código' y 'Microservicios digital' ",
+  "kind": "Workshop",
+  "name": "Meetup 3x1",
+  "place": "La Brújula Cowork",
+  "speakers": [
+    {
+      "name": "Carlos Alcalde",
+      "presentation": "",
+      "twitter": ""
+    }
+	{
+      "name": "Diego Torres",
+      "presentation": "",
+      "twitter": ""
+    }
+	{
+      "name": "Felipe Suazo",
+      "presentation": "",
+      "twitter": ""
+    }
+  ],
+  "url": "https://www.meetup.com/es-ES/IV-DEVS/events/234849056/"
+}

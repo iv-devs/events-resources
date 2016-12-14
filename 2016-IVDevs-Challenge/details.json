@@ -1,0 +1,34 @@
+{
+  "name": "IV Devs - Challenge 2.0",
+  "date": "12-08-2016 / 13-08-2016",
+  "description": "No basta con querer un cambio... Debes ser parte de él! Bienvenido a Challenge 2.0 Evento Gratuito Organizado por IVDevs junto a UST La Serena y La Brújula Cowork. Esta es una oportunidad en donde aprenderás, Conocerás y te medirás con lo Mejor de la Región! Inscribete Ya!",
+  "place": "Universidad Santo Tomas - Sede La Serena",
+  "url": "https://welcu.com/iv-devs/challenge-20",
+  "speakers": [
+    {
+      "name" : "Felipe Cabargas",
+      "twitter": "@juanpintoduran",
+      "presentation": "https://speakerdeck.com/felipecabargas/iv-devs-challenge-2-dot-0-talk"
+    },{
+      "name" :"Felipe Torres",
+      "twitter": "@fforres",
+      "presentation": "http://www.fforr.es/iv_challenge_2_keynote_ingenieria_de_software"
+    },{
+      "name": "Fernando Larrañaga",
+      "twitter": " @xabadu",
+      "presentation": ["https://speakerdeck.com/xabadu/diez-una-historia-de-cuchuflis", "presentaciones/Diez-Una_historia_de_cuchuflis.pdf"]
+    },{
+      "name": "Luis Porras",
+      "twitter": "@lporras16",
+      "presentation": "http://lporras.github.io/nosql-presentation/#/"
+    },{
+      "name": "Humberto Salazar",
+      "twitter": "@hsalazar",
+      "presentation": "presentaciones/Escalabilidad_en_el_mundo_real.pdf"
+    },{
+      "name": "Cristian Rivera",
+      "twitter": "@cristiandevel",
+      "presentation": "presentaciones/PresentacionCristianRivera-Desarrollo_Mobile.pptx"
+    }
+  ]
+}

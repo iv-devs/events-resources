@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block head_title %}{{titulo}}{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+	{% if series %}
+		{% for serie in series %}
+		<div class="well">
+            <div class="row">
+                <div class="col-md-2">
+                	{% if serie.imagen %}
+                		<img src="{{ MEDIA_URL }}{{ serie.imagen }}" height="150" width="200">
+                	{% else %}
+                		<img src="{% static 'apps/img/no-img.png' %}" height="150" width="200">
+                	{% endif %}
+                </div>
+				<div class="col-md-5">
+					<ul>
+						<li>ID: {{ serie.id }}</li>
+						<li>Nombre: {{ serie.nombre }}</li>
+						<li>Fecha de emisión: {{ serie.fecha }}</li>
+						<li>Es animada: {% if serie.es_animada %}Sí{% else %}No{% endif %}</li>
+						<li>
+							<a href="{% url 'editar-serie' serie.id %}" class="btn btn-warning">Editar</a>
+							<a href="{% url 'eliminar-serie' serie.id %}" class="btn btn-danger">Eliminar</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	{% else %}
+	<h2>No hay series.</h2>
+	{% endif%}
+
+</div><!-- /.container -->
+
+{% endblock %}

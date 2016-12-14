@@ -1,0 +1,134 @@
+﻿Advertencia: [sudo] solo es para Linux y Mac OSX
+
+#######
+# PIP #
+#######
+# descarga de pip
+	# Linux
+		wget https://bootstrap.pypa.io/get-pip.py
+	# windows
+		# descargar manualmente https://bootstrap.pypa.io/get-pip.py
+# instalación de pip -> en carpeta donde se ubica get-pip.py, ejecutar:
+[sudo] python get-pip.py
+
+##############
+# VIRTUALENV #
+##############
+[sudo] pip install virtualenv
+
+##########
+# DJANGO #
+##########
+mkdir proyecto-django
+cd proyecto-django
+virtualenv venv
+# activar virtualenv:
+	# Windows:
+		venv\Scripts\activate
+	# Linux:
+		source venv/bin/activate
+pip install django
+pip install django-debug-toolbar
+# instalar herramientas para BD:
+	# mysql:
+		# en unix, ejecutar previamente: sudo apt-get install libmysqlclient-dev python-dev
+		pip install mysqlclient
+	# postgres:
+		sudo apt-get install python-dev libpq-dev postgresql-contrib
+		# instalar psycopg2
+			# en unix
+				pip install psycopg2
+			# en windows
+				# http://www.stickpeople.com/projects/python/win-psycopg/ (ver notas de instalación en el link)
+	# sqlite 3: no requiere instalación de paquetes externos
+pip install Pillow
+django-admin startproject nombre_proyecto
+cd nombre_proyecto
+python manage.py check
+python manage.py runserver
+# abrir el navegador e ingresar a 127.0.0.1:8000
+# parar la ejecución de runserver
+# cambiar timezone en settings.py
+	TIME_ZONE = 'America/Santiago'
+	USE_I18N = True
+	USE_L10N = True
+	USE_TZ = False
+# registrar django-debug-toolbar en seccion APPS de settings.py
+	INSTALLED_APPS = [
+		...
+		'debug_toolbar',
+	]
+# configurar context processors en setting.py
+	TEMPLATES = [
+		{
+			...
+			'OPTIONS': {
+				'context_processors': [
+					...
+					'django.template.context_processors.media',
+				],
+			},
+		},
+	]
+# configurar static files en settings.py
+	STATIC_URL = '/static/'
+	STATICFILES_DIRS = (
+		os.path.join(BASE_DIR, 'static'),
+		)
+	STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static')
+# configurar media files en setting.py
+	MEDIA_URL = '/media/'
+	MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'media')
+# configurar BD en settings.py (si utilizará SQLite 3, omita este paso)
+	DATABASES = {
+		'default': {
+			'ENGINE': 'django.db.backends.mysql', # 'django.db.backends.postgresql'
+			'NAME': 'nombre_bd',
+			'USER': 'usuario', # 'root' por defecto
+			'PASSWORD': 'contraseña',
+			'HOST': '127.0.0.1',
+			'PORT': '3306', # '3306' para mysql, '5432 para postgresql'
+		}
+	}
+# si utiliza MySQL o PostgreSQL, cree la BD 'nombre_bd'
+python manage.py migrate # aplica los cambios en la BD
+python manage.py startapp nombre_app # crea la app 'nombre_app'
+# registrar app en seccion APPS de settings.py
+	INSTALLED_APPS = [
+		...
+		'nombre_app',
+	]
+# crear modelos en models.py, hacer migraciones y migrar
+# crear vistas en views.py
+# referencias urls.py de cada app a urls.py del proyecto, y usar static en modo debug
+	# ejemplo de urls.py de un proyecto
+	from django.conf.urls import url, include
+	from django.conf import settings
+	from django.conf.urls.static import static
+	urlpatterns = [
+		url(r'', include('nombre_app.urls')),
+		url(r'^nombre-app/', include('nombre_app.urls')),
+	]
+	if settings.DEBUG:
+		urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+		print 'urls.py -> debug = True'
+# asociar vistas en urls.py
+	# ejemplo de urls.py de la app
+	from django.conf.urls import url
+	from nombre_app.views \
+		import home, acerca_de
+	urlpatterns = [	
+		url(r'^$', home, name='home'), # es el index.html
+		url(r'^acerca-de/$', acerca_de, name='acerca-de'),
+	]
+# crear formularios en forms.py
+# crear carpeta 'static' en carpeta que almacena el archivo manage.py
+# poner archivos estáticos / assets (css, js, imagenes, etc.) en STATIC_URLS
+python manage.py collectstatic # copia los archivos de la ruta STATICFILES_DIRS a la ruta STATIC_ROOT (definidas en settings.py)
+python manage.py check # verifica que el proyecto está OK
+python manage.py makemigrations # crea migraciones
+python manage.py migrate # aplica las migraciones en la BD
+python manage.py runserver
+# abrir el navegador e ingresar a 127.0.0.1:8000
+# parar la ejecución de runserver
+python manage.py createsuperuser # para acceder al panel de administración con los datos del superusuario a crear

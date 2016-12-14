@@ -1,0 +1,70 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>{% block head_title %}{% endblock %} - Series</title>
+
+	<link rel="stylesheet" type="text/css" href="{% static 'apps/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'apps/css/starter-template.css' %}">
+	<script type="text/javascript" src="{% static 'apps/js/jquery.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'apps/js/bootstrap.min.js' %}"></script>
+
+	{% block css_javascript %}
+	{% endblock %}
+
+</head>
+<body>
+
+<!--****************************************************************************-->
+<!--************************			Header			************************-->
+<!--****************************************************************************-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Project name</a>
+		</div>
+		<div id="navbar" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<!-- Nuevo codigo - INICIO -->
+				<li role="separator" class="divider"></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Serie <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="{% url 'agregar-serie' %}">Agregar</a></li>
+						<li><a href="{% url 'listar-series' %}">Listar</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Personaje <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="{% url 'agregar-personaje' %}">Agregar</a></li>
+						<li><a href="{% url 'listar-personajes' %}">Listar</a></li>
+					</ul>
+				</li>
+				<!-- Nuevo codigo - FIN -->
+			</ul>
+		</div><!--/.nav-collapse -->
+	</div>
+</nav>
+
+<!--****************************************************************************-->
+<!--***********************			Contenido			************************-->
+<!--****************************************************************************-->
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>
