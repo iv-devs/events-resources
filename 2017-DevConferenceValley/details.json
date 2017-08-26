@@ -1,0 +1,40 @@
+{
+  "name": "IV Devs - DevConferenceValley",
+  "date": "19-08-2017",
+  "description": "No basta con querer un cambio... Debes ser parte de él! Bienvenido a DevConferenceValley Evento Gratuito Organizado por IVDevs junto a UST La Serena. Esta es una oportunidad en donde aprenderás, Conocerás y te medirás con lo Mejor de la Región! Inscribete Ya!",
+  "place": "Universidad Santo Tomas - Sede Libertad - La Serena",
+  "url": "https://welcu.com/iv-devs/devconferencevalley",
+  "speakers": [
+    {
+      "name" : "César Hormazabal",
+      "twitter": "#",
+      "presentation": "#"
+    },{
+      "name" :"Felipe Barrios",
+      "twitter": "@FbarriosL",
+      "presentation": "presentaciones/Microservice_OnRails.pdf"
+    },{
+      "name": "Nestor Campos",
+      "twitter": " #",
+      "presentation": [
+        "https://drive.google.com/open?id=0BzwvkBY8Nd6RZm1fWWZLV1JkcE0",
+        "presentaciones/Machine_Learning.pptx"
+      ]
+    },{
+      "name": "José Gago",
+      "twitter": "@jalejandrogago",
+      "presentation": [
+        "https://drive.google.com/file/d/0B_xb-DS117GeNVVKVG40blJhT0k/view",
+        "presentaciones/Analisis_Forense_de_Dispositivos_con_Android_OS.ppsx"
+      ]
+    },{
+      "name": "Leonardo Garces",
+      "twitter": "#",
+      "presentation": "#"
+    },{
+      "name": "Humberto Salazar",
+      "twitter": "@hsalazar",
+      "presentation": "presentaciones/Serverless.pdf"
+    }
+  ]
+}
